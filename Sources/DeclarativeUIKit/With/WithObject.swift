@@ -3,7 +3,7 @@ import UIKit
 public protocol WithObject: AnyObject {}
 
 public extension WithObject {
-    func with(_ block: @escaping (Self) -> Void) -> Self {
+    func with(_ block: (Self) -> Void) -> Self {
         block(self)
         return self
     }
