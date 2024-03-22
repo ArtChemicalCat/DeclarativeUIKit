@@ -14,7 +14,7 @@ public extension UIView {
     }
     
     @discardableResult
-    func cornerRadius(_ radius: Double, corners: CACornerMask? = nil) -> Self {
+    func roundedCorners(_ radius: Double, corners: CACornerMask? = nil) -> Self {
         layer.cornerRadius = radius
         corners.map { layer.maskedCorners = $0 }
         return self
